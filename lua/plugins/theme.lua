@@ -1,12 +1,12 @@
 -- lua/plugins/colorscheme.lua
 return {
-  {
-    "bluz71/vim-nightfly-colors",
-    name = "nightfly",
-    lazy = false,      -- load on startup
-    priority = 1000,   -- load before other plugins
-    config = function()
-      vim.cmd.colorscheme("nightfly")
-    end,
-  },
+	{
+		"iagorrr/noctis-high-contrast.nvim", -- repo
+		name = "noctishc", -- optional alias
+		lazy = false, -- load on startup
+		priority = 1000, -- load first
+		config = function()
+			vim.cmd.colorscheme("noctishc") -- apply colorscheme
+		end,
+	},
 }

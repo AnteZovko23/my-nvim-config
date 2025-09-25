@@ -13,7 +13,6 @@ keymap.set("i", "<C-c>", "<ESC>", { desc = "Exit insert mode with jk" })
 -- clear search highlights
 keymap.set("n", "<C-c>", ":nohl<CR>", { desc = "Clear search highlights" })
 
-
 vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<S-Down>", "<C-d>zz", { desc = "move down in buffer with cursor centered" })
 vim.keymap.set("n", "<S-Up>", "<C-u>zz", { desc = "move up in buffer with cursor centered" })
@@ -40,3 +39,6 @@ vim.keymap.set("n", "<leader>sc", ":%s///gc<Left><Left><Left>", { desc = "Replac
 
 -- Close all windows and buffers and save and exit
 vim.keymap.set("n", "<leader>qq", "<cmd>qa!<CR>", { desc = "Quit all" })
+
+-- Close current buffer with space b c
+vim.keymap.set("n", "<leader>bc", "<cmd>bd!<CR>", { desc = "Close current buffer" })
